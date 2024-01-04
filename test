@@ -1,0 +1,27 @@
+// @ts-check
+const { test, expect, chromium } = require("@playwright/test");
+
+test("test", async () => {
+  const browser = await chromium.launch({ headless: false, slowMo: 500 });
+  const page = await browser.newPage();
+  await page.setDefaultTimeout(1000000);
+  // Add your test code here
+  test("has title", async ({ page }) => {
+    await page.goto("https://www.fortissio.com/");
+
+    // Expect a title "to contain" a substring.
+    await expect(page).toHaveTitle(/Fortissio/);
+  });
+
+  test("get started link", async ({ page }) => {
+    await page.goto("https://www.fortissio.com/");
+
+    // Click the get started link.
+    await page
+      .locator(
+        "#home-page-text > div > div > div.wpb_raw_code.wpb_content_element.wpb_raw_html > div > a"
+      )
+      .click();
+  });
+  await browser.close();
+});

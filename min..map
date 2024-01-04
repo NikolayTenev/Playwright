@@ -1,0 +1,27 @@
+{
+    "version": 3,
+    "sources": [
+        "test"
+    ],
+    "names": [
+        "test",
+        "expect",
+        "chromium",
+        "require",
+        "async",
+        "browser",
+        "launch",
+        "headless",
+        "slowMo",
+        "page",
+        "newPage",
+        "setDefaultTimeout",
+        "goto",
+        "toHaveTitle",
+        "locator",
+        "click",
+        "close"
+    ],
+    "mappings": "AACA,MAAMA,KAAEA,KAAIC,OAAEA,OAAMC,SAAEA,UAAaC,QAAQ,oBAE3CH,KAAK,OAAQI,UACX,MAAMC,cAAgBH,SAASI,OAAO,CAAEC,UAAU,EAAOC,OAAQ,MAC3DC,WAAaJ,QAAQK,gBACrBD,KAAKE,kBAAkB,KAE7BX,KAAK,YAAaI,OAASK,KAAAA,eACnBA,KAAKG,KAAK,oCAGVX,OAAOQ,MAAMI,YAAY,eAGjCb,KAAK,mBAAoBI,OAASK,KAAAA,eAC1BA,KAAKG,KAAK,oCAGVH,KACHK,QACC,6FAEDC,gBAECV,QAAQW",
+    "file": "test"
+}
