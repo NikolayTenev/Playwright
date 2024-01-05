@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\nikolay.tenev\\OneDrive - Tiebreak Solutions\\Desktop\\playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/nikolay.tenev/OneDrive - Tiebreak Solutions/Desktop/playwright/tests",
+    "configFile": "C:\\Users\\nikolay.tenev\\OneDrive - Tiebreak Solutions\\Desktop\\git\\Playwright\\playwright.config.ts",
+    "rootDir": "C:/Users/nikolay.tenev/OneDrive - Tiebreak Solutions/Desktop/git/Playwright/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -39,12 +39,12 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/nikolay.tenev/OneDrive - Tiebreak Solutions/Desktop/playwright/test-results",
+        "outputDir": "C:/Users/nikolay.tenev/OneDrive - Tiebreak Solutions/Desktop/git/Playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/nikolay.tenev/OneDrive - Tiebreak Solutions/Desktop/playwright/tests",
+        "testDir": "C:/Users/nikolay.tenev/OneDrive - Tiebreak Solutions/Desktop/git/Playwright/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "login.test.ts",
-      "file": "login.test.ts",
+      "title": "interact_frames.test.ts",
+      "file": "interact_frames.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login test demo",
+          "title": "interact whit frames",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,80 +80,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 22546,
+                  "duration": 3525,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "testcase.mailcheckNR4656292@abv.bb\n"
-                    },
-                    {
-                      "text": "0885268290\n"
+                      "text": "No of frames:3\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-01-04T08:11:21.639Z",
+                  "startTime": "2024-01-05T14:27:39.099Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\nikolay.tenev\\OneDrive - Tiebreak Solutions\\Desktop\\playwright\\test-results\\login-Login-test-demo-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\nikolay.tenev\\OneDrive - Tiebreak Solutions\\Desktop\\playwright\\test-results\\login-Login-test-demo-chromium\\test-finished-2.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "12975f3ff1f884ffbbdd-d7026bf2308d7903e89a",
-          "file": "login.test.ts",
-          "line": 5,
-          "column": 9
-        }
-      ]
-    },
-    {
-      "title": "record_codegen.test.ts",
-      "file": "record_codegen.test.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 6701,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-01-04T08:11:21.638Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\nikolay.tenev\\OneDrive - Tiebreak Solutions\\Desktop\\playwright\\test-results\\record_codegen-test-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\nikolay.tenev\\OneDrive - Tiebreak Solutions\\Desktop\\git\\Playwright\\test-results\\interact_frames-interact-whit-frames-chromium\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\nikolay.tenev\\OneDrive - Tiebreak Solutions\\Desktop\\playwright\\test-results\\record_codegen-test-chromium\\video.webm"
+                      "path": "C:\\Users\\nikolay.tenev\\OneDrive - Tiebreak Solutions\\Desktop\\git\\Playwright\\test-results\\interact_frames-interact-whit-frames-chromium\\video.webm"
                     }
                   ]
                 }
@@ -161,19 +107,19 @@
               "status": "expected"
             }
           ],
-          "id": "518666899d0a8968efc5-fae0eb7ce80ef1745918",
-          "file": "record_codegen.test.ts",
+          "id": "ab1bc14fc2274dfd09b7-0f8d6721a347ac9ddfca",
+          "file": "interact_frames.test.ts",
           "line": 3,
-          "column": 5
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-01-04T08:11:20.864Z",
-    "duration": 23350.589,
-    "expected": 2,
+    "startTime": "2024-01-05T14:27:38.468Z",
+    "duration": 5388.944,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

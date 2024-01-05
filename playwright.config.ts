@@ -1,7 +1,7 @@
 import { PlaywrightTestConfig, defineConfig, devices } from '@playwright/test';
 import { json } from 'stream/consumers';
 const config: PlaywrightTestConfig = {
-  testMatch: ["login.test.ts"]
+  testMatch: ["interact_frames.test.ts"]
 };
 
 export default defineConfig({
