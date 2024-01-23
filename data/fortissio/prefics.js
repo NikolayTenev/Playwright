@@ -1,0 +1,1 @@
+export const FortissioPre = ["www","tr", "es", "it","sv","pl","ar","el","de"];

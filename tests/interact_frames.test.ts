@@ -1,6 +1,6 @@
 import {test} from "@playwright/test"
 
-test.only ("interact whit frames", async ({page}) => {
+test ("interact whit frames", async ({page}) => {
 
 await page.goto ("https://www.fortissio.com/about-fortissio/contact-us/")
 const allframes = page.frames();
@@ -15,3 +15,5 @@ await page.selectOption("#wpcf7-f287-p286-o1 > form > div.container > div:nth-ch
 })
 
 })
+
+

@@ -1,0 +1,1 @@
+export const wbsPre = ["www","tr", "es", "it","sv","pl","ar","el","de"];

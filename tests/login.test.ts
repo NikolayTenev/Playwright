@@ -14,9 +14,13 @@ import {chromium, expect, test} from "@playwright/test"
         await newPage.goto("https://www.fortissio.com/market-tools/autochartist/");
         await newPage.getByRole('link', { name: 'Sign up' }).click();
     
+        // скрипт за рандом имейл
         let email = `testcase.mailcheckNR465${Math.floor(Math.random() * 10000)}@abv.bb`;
+
+        // скрипт за рандом телефонен номер
         let phoneNumber = `088${Math.floor(Math.random() * 10000000)}`;
         
+        // принт на имейла и телефона във репорта
         console.log(email);
         console.log(phoneNumber);
        

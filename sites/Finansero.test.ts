@@ -1,22 +1,22 @@
 import { expect, test } from "@playwright/test";
 import { ArrFounded, findWord } from "../pages/wordpage";
-import { FortissioPre } from "../data/fortissio/prefics";
-import { fortissioUrls } from "../data/fortissio/urls";
+import { finanseroPre } from "../data/finansero/prefics";
+import { finanseroUrls} from "../data/finansero/urls";
 import exp from "constants";
 import { badWords } from "../data/finansero/specialWords";
 
 
 
-test("Check word_01", async ({ page }) => {
-  const domain = "fortissio.com";
-  const fortissioPrefics = FortissioPre;
-  const fortissioUrls1 = fortissioUrls;
+test("Check word_02", async ({ page }) => {
+  const domain = "finansero.com";
+  const finanseroPrefics = finanseroPre;
+  const finanseroUrls1 = finanseroUrls;
 
   const arrFounded: ArrFounded = [];
-  test.setTimeout(260000);
-  for (let i = 0; i < fortissioPrefics.length; i++) {
-    for (let j = 0; j < fortissioUrls1.length; j++) {
-      const URL = `https://${fortissioPrefics[i]}.${domain}/${fortissioUrls1[j]}`;
+  test.setTimeout(360000);
+  for (let i = 0; i <finanseroPrefics.length; i++) {
+    for (let j = 0; j < finanseroUrls.length; j++) {
+      const URL = `https://${finanseroPrefics[i]}.${domain}/${finanseroUrls[j]}`;
       try {
         await page.goto(URL, { waitUntil: "domcontentloaded" });
 

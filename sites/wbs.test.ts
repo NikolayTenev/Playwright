@@ -1,22 +1,22 @@
 import { expect, test } from "@playwright/test";
 import { ArrFounded, findWord } from "../pages/wordpage";
-import { FortissioPre } from "../data/fortissio/prefics";
-import { fortissioUrls } from "../data/fortissio/urls";
+import {  wbsPre } from "../data/wbs/prefics";
+import { wbsUrls} from "../data/wbs/urls";
 import exp from "constants";
-import { badWords } from "../data/finansero/specialWords";
+import { badWords } from "../data/wbs/specialWords";
 
 
 
-test("Check word_01", async ({ page }) => {
-  const domain = "fortissio.com";
-  const fortissioPrefics = FortissioPre;
-  const fortissioUrls1 = fortissioUrls;
+test("Check word_06", async ({ page }) => {
+  const domain = "wbandsmith.com";
+  const wbsPrefics = wbsPre;
+  const wbsUrls1 = wbsUrls;
 
   const arrFounded: ArrFounded = [];
-  test.setTimeout(260000);
-  for (let i = 0; i < fortissioPrefics.length; i++) {
-    for (let j = 0; j < fortissioUrls1.length; j++) {
-      const URL = `https://${fortissioPrefics[i]}.${domain}/${fortissioUrls1[j]}`;
+  test.setTimeout(460000);
+  for (let i = 0; i <wbsPrefics.length; i++) {
+    for (let j = 0; j < wbsUrls.length; j++) {
+      const URL = `https://${wbsPrefics[i]}.${domain}/${wbsUrls[j]}`;
       try {
         await page.goto(URL, { waitUntil: "domcontentloaded" });
 
@@ -26,7 +26,8 @@ test("Check word_01", async ({ page }) => {
         continue;
       }
     }
-  }
+}
+  
 
   arrFounded.forEach((element) => {
     expect(
