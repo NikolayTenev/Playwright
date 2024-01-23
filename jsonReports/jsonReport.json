@@ -1,7 +1,7 @@
 {
   "config": {
     "configFile": "C:\\Users\\nikolay.tenev\\OneDrive - Tiebreak Solutions\\Desktop\\git\\Playwright\\playwright.config.ts",
-    "rootDir": "C:/Users/nikolay.tenev/OneDrive - Tiebreak Solutions/Desktop/git/Playwright/tests",
+    "rootDir": "C:/Users/nikolay.tenev/OneDrive - Tiebreak Solutions/Desktop/git/Playwright/sites",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -44,7 +44,7 @@
         "retries": 0,
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/nikolay.tenev/OneDrive - Tiebreak Solutions/Desktop/git/Playwright/tests",
+        "testDir": "C:/Users/nikolay.tenev/OneDrive - Tiebreak Solutions/Desktop/git/Playwright/sites",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -54,24 +54,24 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.40.1",
+    "version": "1.41.0",
     "workers": 4,
     "webServer": null
   },
   "suites": [
     {
-      "title": "interact_frames.test.ts",
-      "file": "interact_frames.test.ts",
+      "title": "70trades.test.ts",
+      "file": "70trades.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "interact whit frames",
+          "title": "Check word_03",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 360000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
@@ -80,48 +80,832 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 3525,
+                  "duration": 87300,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "No of frames:3\n"
+                      "text": "URL: https://70trades.com/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/advantages/testimonials/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/advantages/products/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/advantages/trading-conditions/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/advantages/trading-benefits/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/about/first-protected-positions/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/advantages/support/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/advantages/banking/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/advantages/safe-trading/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/trading-plans/entry-level/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/trading-plans/advanced/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/trading-plans/pro/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/trading-plans/compare-plans/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/trading-tools/autochartist/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/trading-tools/portfolio-builder/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/trading-tools/live-data-center/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/trading-tools/trading-platforms/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/trading-tools/economic-calendar/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/trading-tools/market-reviews/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/coaching/beginner/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/coaching/advanced/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/coaching/pro/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/coaching/commodities-trading/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/coaching/gold-trading/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/coaching/oil-trading/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/coaching/free-lessons/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://70trades.com/trading-tools/autochartist/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://es.70trades.com/coaching/free-lessons/, word:Login\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-01-05T14:27:39.099Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\nikolay.tenev\\OneDrive - Tiebreak Solutions\\Desktop\\git\\Playwright\\test-results\\interact_frames-interact-whit-frames-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\nikolay.tenev\\OneDrive - Tiebreak Solutions\\Desktop\\git\\Playwright\\test-results\\interact_frames-interact-whit-frames-chromium\\video.webm"
-                    }
-                  ]
+                  "startTime": "2024-01-23T10:00:59.973Z",
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "ab1bc14fc2274dfd09b7-0f8d6721a347ac9ddfca",
-          "file": "interact_frames.test.ts",
-          "line": 3,
-          "column": 6
+          "id": "a137cbd47914a44ca482-fe755df29e5f84480261",
+          "file": "70trades.test.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "A3trading.test.ts",
+      "file": "A3trading.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Check word_05",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 78584,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "URL: https://www.a3t.live/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-assets/commodities/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-assets/cryptocurrencies/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-assets/currencies/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-assets/indices/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-assets/stocks/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-platforms/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-platforms/web-platform/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-platforms/mobile/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-tools/autochartist/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-tools/daily-market-review/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-tools/economic-calendar/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-tools/live-rates-charts/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-tools/real-time-trends/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-courses/advanced-traders/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-courses/video-tutorials/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/trading-courses/trading-for-beginners/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/about/terms-and-conditions/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/about/3d-secure/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/about/privacy-policy/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/about/risk-disclosure/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/about/withdrawals/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/about/trading-benefits/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/about/first-protected-positions/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/about/complaints/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/about/contact/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/hc/en-us, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/about/complaints/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.a3t.live/about/complaints/, word:Login\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-01-23T10:00:59.903Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "48d2722ab6fbad96dcd3-a20359642ed2d14e9c05",
+          "file": "A3trading.test.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ar70trades.test.ts",
+      "file": "ar70trades.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Check word_04",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 20198,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "URL: https://ar.70trades.ae/coaching/free-lessons/, word:Login\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-01-23T10:00:59.952Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6b8075cb918269e3b29-1236fa013654086d53c2",
+          "file": "ar70trades.test.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Finansero.test.ts",
+      "file": "Finansero.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Check word_02",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "timedOut",
+                  "duration": 360006,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 360000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 360000ms exceeded.\u001b[39m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "URL: https://www.finansero.com/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/company/authorisation-and-passporting/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/company/documents/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/company/cookies/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/announcements/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/company/mobile-profit/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/company/profit-platform/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/account-types/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/leverage-for-retail-accounts/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/professional-clients/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/leverage-for-professional-clients/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/product-sheet-and-costs/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/cfd/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/commodities/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/etf/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/forex/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/indices/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/shares/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/synthetic-derivatives/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/margin-close-out/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/glossary/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/tools/autochartist/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/tools/charts/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/tools/economic-calendar/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/tools/live-rates/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/tools/news/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/deposits/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/trading/withdrawals/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.finansero.com/company/contact-us/, word:Login\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-01-23T10:01:00.030Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d3e965ca2bda6f955ec4-49619de1eea814a8e1e3",
+          "file": "Finansero.test.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Fortissio.test.ts",
+      "file": "Fortissio.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Check word_01",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 260000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "timedOut",
+                  "duration": 260001,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 260000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 260000ms exceeded.\u001b[39m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "URL: https://www.fortissio.com/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/account-types/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/account-types/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/product-sheet-and-costs/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/product-sheet-and-costs/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/margin-close-out/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/margin-close-out/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/leverage/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/leverage/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/banking/withdrawals/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/banking/withdrawals/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/?page_id=272, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/?page_id=272, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/?page_id=273, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/?page_id=273, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/market-tools/autochartist/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/market-tools/autochartist/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/market-tools/charts/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/market-tools/charts/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/market-tools/economic-calendar/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/market-tools/economic-calendar/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/market-tools/financial-news/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/market-tools/financial-news/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/market-tools/sms-services/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/market-tools/sms-services/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/cfds/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/cfds/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/currencies/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/currencies/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/stocks/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/stocks/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/indices/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/indices/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/commodities/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/commodities/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/etf/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/etf/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/synthetic-derivatives/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/products/synthetic-derivatives/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/about-fortissio/why-fortissio/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/about-fortissio/why-fortissio/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/regulation/risk-disclaimer/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/regulation/risk-disclaimer/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/regulation/documentation/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/regulation/documentation/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/about-fortissio/regulations/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/about-fortissio/regulations/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/about-fortissio/cookies/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/about-fortissio/cookies/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/regulation/announcements/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/regulation/announcements/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/fortissio-affiliate-program/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/fortissio-affiliate-program/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/about-fortissio/contact-us/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/about-fortissio/contact-us/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/research/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/research/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/register/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/products/account-types/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/products/product-sheet-and-costs/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/products/margin-close-out/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/products/leverage/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/banking/withdrawals/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/?page_id=416, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://de.fortissio.com/3ds2-and-fast-bank-transfer/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/market-tools/autochartist/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/market-tools/charts/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/market-tools/economic-calendar/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/market-tools/financial-news/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/market-tools/sms-services/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/products/cfds/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/products/currencies/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/products/stocks/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/products/indices/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/products/commodities/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/products/etf/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/products/synthetic-derivatives/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/about-fortissio/why-fortissio/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/regulation/risk-disclaimer/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/regulation/documentation/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/about-fortissio/regulations/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/about-fortissio/cookies/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/regulation/announcements/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/fortissio-affiliate-program/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://es.fortissio.com/about-fortissio/contact-us/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/research/, word:fortissio\n"
+                    },
+                    {
+                      "text": "URL: https://www.fortissio.com/research/, word:Login\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-01-23T10:01:22.157Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "14cb8715e0442dab8c48-36d3c9b46aa7b49d1e62",
+          "file": "Fortissio.test.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "wbs.test.ts",
+      "file": "wbs.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Check word_06",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 460000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 23047,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "URL: https://www.wbandsmith.com/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/about-warren-bowie-smith/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/company/contact-us/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/company/documents/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/trading-conditions/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/how-to-get-started/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/mobile-platform/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/trading-platform/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/cfd-trading/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/symbols/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/commodities/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/currencies/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/stocks/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/etfs/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/indices/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/hedge-newest-position/, word:Login\n"
+                    },
+                    {
+                      "text": "URL: https://www.wbandsmith.com/announcements/, word:Login\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-01-23T10:02:20.547Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aa2351e293f72956b205-073bc80ed4fb816ad826",
+          "file": "wbs.test.ts",
+          "line": 10,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-01-05T14:27:38.468Z",
-    "duration": 5388.944,
-    "expected": 1,
+    "startTime": "2024-01-23T10:00:58.924Z",
+    "duration": 363079.427,
+    "expected": 4,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }

@@ -1,1 +1,0 @@
-export const FortissioUrls = ["", "products/account-types/", "products/product-sheet-and-costs/"];
