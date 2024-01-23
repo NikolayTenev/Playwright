@@ -5,7 +5,7 @@ const config: PlaywrightTestConfig = {
 };
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: './sites',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -19,9 +19,8 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     headless: false,
-    actionTimeout: 1000000,
-    screenshot: "on",
-    video: "on",
+    // actionTimeout: 10000000,
+   
    
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
@@ -60,7 +59,7 @@ export default defineConfig({
     // },
     // {
     //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
+    //   use: { ...devices['iPhone 13'] },
     // },
 
     /* Test against branded browsers. */
