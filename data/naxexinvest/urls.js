@@ -1,0 +1,12 @@
+export const naxexinvestUrls = ["",
+ "#about-us-section",
+ "deep-market-liquidity/",
+ "cfd-asset-classes/",
+ "additional-services/",
+"dealing-on-own-account-regime/",
+"documents/",
+"regulations/",
+"market-monitor/",
+"news/",
+"stay-safe-online/",
+"#contact-us-section"];

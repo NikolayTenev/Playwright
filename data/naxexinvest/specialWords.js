@@ -8,10 +8,10 @@ export const badWords = [
     "toroinvest",
     "tradocenter",
     "xlntrade",
+    "wbs",
     "finansero",
     "zenstox",
     "PROfit",
     "tradenetworks",
     "green pole",
-    "thexcite",
-    "Login"];
+    "thexcite"];
