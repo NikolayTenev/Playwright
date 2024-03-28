@@ -1,7 +1,7 @@
 import { PlaywrightTestConfig, defineConfig, devices } from '@playwright/test';
 import { json } from 'stream/consumers';
 const config: PlaywrightTestConfig = {
-  testMatch: ["interact_frames.test.ts"]
+  testMatch: ["interact_frames.sites.ts"]
 };
 
 export default defineConfig({
@@ -19,8 +19,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     headless: false,
-    // actionTimeout: 10000000,
-   
+     actionTimeout: 2840000 ,
    
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
@@ -39,7 +38,9 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      
+      use: { ...devices['Desktop Chrome'],viewport: {width:1920,height:980} },
+      
     },
 
     // {

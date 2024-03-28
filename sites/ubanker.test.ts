@@ -1,20 +1,22 @@
 import { expect, test } from "@playwright/test";
 import { ArrFounded, findWord } from "../pages/wordpage";
-import { inviertasPre } from "../data/inviertas/prefics";
-import { inviertasUrls } from "../data/inviertas/urls";
+import { ubankerPre } from "../data/ubanker/prefics";
+import { ubankerUrls} from "../data/ubanker/urls";
 import exp from "constants";
-import { badWords } from "../data/inviertas/specialWords";
+import { badWords } from "../data/ubanker/specialWords";
 
-test("Check word_11", async ({ page }) => {
-  const domain = "inviertas.com";
-  const inviertasPrefics = inviertasPre;
-  const inviertasUrls1 = inviertasUrls;
+
+
+test("Check word_07", async ({ page }) => {
+  const domain = "ubanker.com";
+  const ubankerPrefics = ubankerPre;
+  const ubankerUrls1 = ubankerUrls;
 
   const arrFounded: ArrFounded = [];
-  test.setTimeout(460000);
-  for (let i = 0; i < inviertasPrefics.length; i++) {
-    for (let j = 0; j < inviertasUrls.length; j++) {
-      const URL = `https://${inviertasPrefics[i]}.${domain}/${inviertasUrls[j]}`;
+  test.setTimeout(360000);
+  for (let i = 0; i <ubankerPrefics.length; i++) {
+    for (let j = 0; j < ubankerUrls.length; j++) {
+      const URL = `https://${ubankerPrefics[i]}.${domain}/${ubankerUrls[j]}`;
       try {
         await page.goto(URL, { waitUntil: "domcontentloaded" });
 

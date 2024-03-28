@@ -1,0 +1,1 @@
+export const RegistrationLPs = [".nxreg-sign-up-phone-number-wrapper input, #phone-number, #mobile, @mobile"];

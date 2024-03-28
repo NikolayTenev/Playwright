@@ -3,7 +3,8 @@ import {chromium, expect, test} from "@playwright/test"
 
 
     test("Login test demo", async () => {
-        const browser = await chromium.launch({ headless: false, slowMo: 100 });
+        const browser = await chromium.launch({ headless: false, slowMo: 500 });
+       
         const context = await browser.newContext();
         const page = await context.newPage();
     
@@ -17,8 +18,10 @@ import {chromium, expect, test} from "@playwright/test"
         // скрипт за рандом имейл
         let email = `testcase.mailcheckNR465${Math.floor(Math.random() * 10000)}@abv.bb`;
 
+       
         // скрипт за рандом телефонен номер
-        let phoneNumber = `088${Math.floor(Math.random() * 10000000)}`;
+        let phoneNumber = `${Math.floor(Math.random() * 10000000).toString().replace(/^(0|1)/,"")}`;
+            phoneNumber = `088${phoneNumber.padStart(7, "2")}`;
         
         // принт на имейла и телефона във репорта
         console.log(email);

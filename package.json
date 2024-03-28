@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "latest": "^0.2.0",
-    "playwright": "^1.41.0",
     "typescript": "^5.3.3"
   }
 }

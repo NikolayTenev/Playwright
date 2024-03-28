@@ -1,20 +1,22 @@
 import { expect, test } from "@playwright/test";
 import { ArrFounded, findWord } from "../pages/wordpage";
-import { inviertasPre } from "../data/inviertas/prefics";
-import { inviertasUrls } from "../data/inviertas/urls";
+import { ontegaPre } from "../data/ontega/prefics";
+import { ontegaUrls} from "../data/ontega/urls";
 import exp from "constants";
-import { badWords } from "../data/inviertas/specialWords";
+import { badWords } from "../data/ontega/specialWords";
 
-test("Check word_11", async ({ page }) => {
-  const domain = "inviertas.com";
-  const inviertasPrefics = inviertasPre;
-  const inviertasUrls1 = inviertasUrls;
+
+
+test("Check word_07", async ({ page }) => {
+  const domain = "ontega.com";
+  const ontegaPrefics = ontegaPre;
+  const ontegaUrls1 =ontegaUrls;
 
   const arrFounded: ArrFounded = [];
   test.setTimeout(460000);
-  for (let i = 0; i < inviertasPrefics.length; i++) {
-    for (let j = 0; j < inviertasUrls.length; j++) {
-      const URL = `https://${inviertasPrefics[i]}.${domain}/${inviertasUrls[j]}`;
+  for (let i = 0; i <ontegaPrefics.length; i++) {
+    for (let j = 0; j < ontegaUrls.length; j++) {
+      const URL = `https://${ontegaPrefics[i]}.${domain}/${ontegaUrls[j]}`;
       try {
         await page.goto(URL, { waitUntil: "domcontentloaded" });
 
@@ -24,7 +26,8 @@ test("Check word_11", async ({ page }) => {
         continue;
       }
     }
-  }
+}
+  
 
   arrFounded.forEach((element) => {
     expect(
