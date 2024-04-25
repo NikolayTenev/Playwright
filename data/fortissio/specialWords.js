@@ -15,5 +15,4 @@ export const badWords = [
     "PROfit",
     "tradenetworks",
     "green pole",
-    "thexcite",
-    "Login"];
+    "thexcite"];

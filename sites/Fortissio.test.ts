@@ -3,7 +3,7 @@ import { ArrFounded, findWord } from "../pages/wordpage";
 import { FortissioPre } from "../data/fortissio/prefics";
 import { fortissioUrls } from "../data/fortissio/urls";
 import exp from "constants";
-import { badWords } from "../data/finansero/specialWords";
+import { badWords } from "../data/fortissio/specialWords";
 
 
 

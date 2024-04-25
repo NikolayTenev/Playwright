@@ -5,7 +5,7 @@ import { tradesUrls } from "../data/LPs/urls";
 import exp from "constants";
 import { badWords } from "../data/LPs/specialWords";
 
-test.only("Check word_10", async ({ page }) => {
+test("Check word_10", async ({ page }) => {
   // const domain = "LPs.com";
   // const LpPrefics = LpPre;
   const LPstradesUrls1 = tradesUrls.slice(0,170);
