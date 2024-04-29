@@ -1,107 +1,4 @@
-// import { expect, test } from "@playwright/test";
-// import { ArrFounded, findWord } from "../pages/wordpage";
-// import { RegistrationLPs } from "../data/RegistrationLPs/urls";
-// import { badWords } from "../data/LPs/specialWords";
-// import { TIMEOUT } from "dns";
-// // import { RegistrationLPs as prefics } from "../data/RegistrationLPs/prefics";
 
-// test.slow();
-
-// test.only("Check word_10", async ({ page }) => {
-//   const LPstradesUrls1 = RegistrationLPs.slice(0, 50);
-//   const arrFounded: ArrFounded = [];
-//   // const prefics1 = prefics;
-//   const timeout = 10000000; // Време за изчакване в милисекунди
-//   test.setTimeout(900000); // Увеличаваме таймаута на теста
-
-//   const delayBetweenRequests = 30000; // 5 секунди забавяне между заявките
-
-//   for (let j = 0; j < LPstradesUrls1.length; j++) {
-//     const URL = `https://static-plexop.s3.amazonaws.com/${LPstradesUrls1[j]}`;
-
-//     try {
-//       await page.goto(URL, { waitUntil: "domcontentloaded", timeout: 500000 });
-
-//       // Изчакване за зареждане на страницата
-//       await page.waitForLoadState("networkidle", { timeout });
-
-//       // скрипт за рандом имейл
-//       let email = `testcase.mailcheckNR465${Math.floor(
-//         Math.random() * 10000
-//       )}@abv.bb`;
-
-//       // скрипт за рандом телефонен номер
-//       let phoneNumber = `${Math.floor(Math.random() * 10000000)
-//         .toString()
-//         .replace(/^(0|1)/, "")}`;
-//       phoneNumber = `088${phoneNumber.padStart(7, "2")}`;
-
-//       // принт на имейла и телефона във репорта
-//       console.log(email);
-//       console.log(phoneNumber);
-
-//       // Попълни формата в новата страница
-//       await page.fill("#fullname", "Test Case");
-//       await page.fill("#email", email);
-//       await page.fill(
-//         ".nxreg-sign-up-phone-number-wrapper input,#phone-number,#mobile",
-//         phoneNumber
-//       );
-
-//       // // Изчакване да се появи чекбоксът
-//       const checkbox = await page.$("input#privacy-notice,#privacy-notice");
-
-//       // Проверка за видимост на чекбокса
-//       const isVisible = await checkbox.isVisible();
-      
-//       // Проверка за състояние на чекбокса (отметнат ли е)
-//       const isChecked = await checkbox.isChecked();
-      
-//       // Ако чекбоксът е видим и не е отметнат, кликваме върху него
-//       if (checkbox && isVisible && !isChecked) {
-//           await checkbox.click();
-//       }
-      
-
-//       // Изчакване на формата да се изпрати
-//       await page.waitForTimeout(5000);
-
-//       // Кликване на бутона за регистрация
-//       const submitButton1 = await page.$("#submit_button");
-//       const submitButton2 = await page.$("[type='submit']");
-
-//       if (submitButton1) {
-//         await submitButton1.click();
-//       } else if (submitButton2) {
-//         await submitButton2.click();
-//       } else {
-//         console.error("Submit button not found.");
-//       }
-
-//       // Изчакване на презареждането на страницата след регистрация
-//       await Promise.race([
-//         page.waitForNavigation({ timeout: 5000 }), // Изчакайте зареждането на страницата до 5 секунди
-//         page.waitForTimeout(5000) // Или изчакайте 5 секунди, ако няма навигация
-//       ]);
-      
-
-//       // Търсене на думи на страницата
-//       await findWord(page, arrFounded, badWords);
-//     } catch (error) {
-//       console.log("Error:", URL);
-//       continue;
-//     }
-//   }
-
-//   arrFounded.forEach((element) => {
-//     expect(
-//       (() => {
-//         console.log(`URL: "${element.url}", word:${element.word}`);
-//         return element.isFound === true;
-//       })()
-//     ).toBe(true);
-//   });
-// });
 
 import { expect, test } from "@playwright/test";
 import { ArrFounded, findWord } from "../pages/wordpage";
@@ -154,6 +51,7 @@ for (let j = 0; j < LPstradesUrls1.length; j++) {
 
       // // Изчакване да се появи чекбоксът
       const checkbox = await page.$("input#privacy-notice,#privacy-notice");
+      
 
       // Проверка за видимост на чекбокса
       const isVisible = await checkbox.isVisible();
@@ -162,7 +60,7 @@ for (let j = 0; j < LPstradesUrls1.length; j++) {
       const isChecked = await checkbox.isChecked();
       
       // Ако чекбоксът е видим и не е отметнат, кликваме върху него
-      if (checkbox && isVisible && !isChecked && !isBlock) {
+      if (checkbox && isVisible && !isChecked && !isBlock ) {
           await checkbox.click();
       }
 

@@ -1,11 +1,11 @@
 import { PlaywrightTestConfig, defineConfig, devices } from '@playwright/test';
 import { json } from 'stream/consumers';
 const config: PlaywrightTestConfig = {
-  testMatch: ["interact_frames.sites.ts"]
+  testMatch: ["interact_frames.tests.ts"]
 };
 
 export default defineConfig({
-  testDir: './sites',
+  testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -26,6 +26,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    screenshot: 'only-on-failure'
   },
 
   reporter: [["dot"],['json', {
@@ -58,7 +59,7 @@ export default defineConfig({
     //   name: 'Mobile Chrome',
     //   use: { ...devices['Pixel 5'] },
     // },
-    // {
+    //    {
     //   name: 'Mobile Safari',
     //   use: { ...devices['iPhone 13'] },
     // },
