@@ -50,7 +50,7 @@ for (let j = 0; j < LPstradesUrls1.length; j++) {
       );
 
       // // Изчакване да се появи чекбоксът
-      const checkbox = await page.$("input#privacy-notice,#privacy-notice");
+      const checkbox = await page.locator("input#privacy-notice,#privacy-notice");
       
 
       // Проверка за видимост на чекбокса

@@ -1,12 +1,13 @@
 import { PlaywrightTestConfig, defineConfig, devices } from '@playwright/test';
 import { json } from 'stream/consumers';
 const config: PlaywrightTestConfig = {
-  testMatch: ["interact_frames.tests.ts"]
+  testMatch: ["testsbasicinteractionfromtutorial.test.ts"]
 };
 
 export default defineConfig({
   testDir: './tests',
   /* Run tests in files in parallel */
+  // ако искам паралелно тестване го правя на true
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
@@ -14,6 +15,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
+
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -21,18 +23,20 @@ export default defineConfig({
     headless: false,
      actionTimeout: 2840000 ,
    
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
+    /* Base URL to use in actions like `await page.goto('/')`. 
+    
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    baseURL: 'https://ecommerce-playground.lambdatest.io/index.php?',
     trace: 'on-first-retry',
-    screenshot: 'only-on-failure'
+    screenshot: 'on',
+    video: 'on',
   },
 
   reporter: [["dot"],['json', {
     outputFile: "jsonReports/jsonReport.json"
   }], ["html", {
-    open: "never"
+    open: "always"
   }]],
 
   /* Configure projects for major browsers */
@@ -46,12 +50,12 @@ export default defineConfig({
 
     // {
     //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
+    //   use: { ...devices['Desktop Firefox'] ,viewport: {width:1920,height:980}  }, 
     // },
 
     // {
     //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
+    //   use: { ...devices['Desktop Safari'] , viewport: {width:1920,height:980}  }, 
     // },
 
     /* Test against mobile viewports. */

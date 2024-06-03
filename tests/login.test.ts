@@ -2,7 +2,7 @@ import {chromium, expect, test} from "@playwright/test"
 
 
 
-    test.only("Login test demo", async () => {
+    test("Login test demo", async () => {
         const browser = await chromium.launch({ headless: false, slowMo: 500 });
        
         const context = await browser.newContext();
@@ -45,6 +45,7 @@ import {chromium, expect, test} from "@playwright/test"
 
         
         // Затвори контекста
+        await page.close();
         await context.close();
         await browser.close();
     });
