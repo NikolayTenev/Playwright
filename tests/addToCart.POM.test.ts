@@ -5,7 +5,7 @@ import HomePage from "../pages/homePage";
 import SpecialHomePage from "../pages/specialHomePage";
 import ShopingCartPage from "../pages/shopingCartPage";
 
-const email = "testcaseNT1@abv.bb";
+const email = "testcaseNT3@abv.bb";
 const phone = "088888888";
 const password = "Qwerty123";
 
