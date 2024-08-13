@@ -1,11 +1,11 @@
 import { PlaywrightTestConfig, defineConfig, devices } from '@playwright/test';
 import { json } from 'stream/consumers';
 const config: PlaywrightTestConfig = {
-  testMatch: ["testsbasicinteractionfromtutorial.test.ts"]
+  testMatch: ["LP_TradeLG.test.ts"]
 };
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: './sites',
   /* Run tests in files in parallel */
   // ако искам паралелно тестване го правя на true
   fullyParallel: true,
@@ -15,13 +15,15 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
+ 
+  
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     headless: false,
-     actionTimeout: 2840000 ,
+     actionTimeout: 4600000 ,
    
     /* Base URL to use in actions like `await page.goto('/')`. 
     
