@@ -7,7 +7,7 @@ import { badWords } from "../data/constants/badWords";
 
 
 
-test.only("Check word_11", async ({ page }) => {
+test("Check word_11", async ({ page }) => {
   // const domain = "LPs.com";
   // const LpPrefics = LpPre;
   const LPstradesUrls1 = RegistrationTradeLGLPs.slice(200);

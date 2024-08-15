@@ -3,7 +3,7 @@
 import { expect, test } from "@playwright/test";
 import { ArrFounded, findWord } from "../pages/wordpage";
 import { RegistrationLPs } from "../data/RegistrationLPs/urls";
-import { badWords } from "../data/LPs/specialWords";
+import { badWords } from "../data/constants/badWords";
 import { isBlock } from "typescript";
 
 

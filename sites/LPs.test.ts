@@ -8,7 +8,7 @@ import { badWords } from "../data/constants/badWords";
 test("Check word_10", async ({ page }) => {
   // const domain = "LPs.com";
   // const LpPrefics = LpPre;
-  const LPstradesUrls1 = tradesUrls.slice(0,170);
+  const LPstradesUrls1 = tradesUrls.slice(170);
 
   const arrFounded: ArrFounded = [];
   test.setTimeout(4600000);
